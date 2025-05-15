@@ -1,1 +1,402 @@
-Nothing Here.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kauã Victor | Web Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold gradient-text">KV.</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+            <button class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20">
+        <div class="max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Olá, eu sou <span class="gradient-text">Kauã Victor</span></h1>
+                <h2 class="text-2xl md:text-3xl text-gray-600 mb-6">Web Designer & UI/UX Enthusiast</h2>
+                <p class="text-gray-600 mb-8 max-w-lg">Crio experiências digitais bonitas e funcionais com foco na usabilidade e estética.</p>
+                <div class="flex space-x-4">
+                    <a href="#projects" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-medium hover:shadow-lg transition-all">Ver Projetos</a>
+                    <a href="#contact" class="px-6 py-3 border border-gray-300 rounded-full font-medium hover:bg-gray-100 transition-all">Contato</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 flex items-center justify-center">
+                    <div class="absolute inset-0 rounded-full border-8 border-white/30 animate-pulse"></div>
+                    <div class="absolute inset-4 rounded-full border-4 border-white/20 animate-ping"></div>
+                    <div class="relative z-10 w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                        <!-- Placeholder for profile image -->
+                        <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                            <i class="fas fa-user text-6xl text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Sobre <span class="gradient-text">Mim</span></h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                        <!-- Placeholder for about image -->
+                        <div class="w-full h-full bg-gray-100 flex items-center justify-center">
+                            <i class="fas fa-user-tie text-5xl text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-semibold mb-4">Kauã Victor, 16 anos</h3>
+                    <p class="text-gray-600 mb-6">Sou um jovem profissional apaixonado por design digital e criação de experiências de usuário memoráveis. Com apenas 16 anos, já acumulo experiência significativa em tradução e construção de páginas web utilizando o Elementor.</p>
+                    <p class="text-gray-600 mb-6">Atualmente, estou me aprofundando no mundo do UI/UX Design, buscando constantemente aprimorar minhas habilidades para criar interfaces que não apenas impressionam visualmente, mas também oferecem a melhor experiência possível para os usuários.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-blue-500 mr-2"></div>
+                            <span class="text-gray-600">Web Design</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-purple-500 mr-2"></div>
+                            <span class="text-gray-600">UI/UX Design</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-indigo-500 mr-2"></div>
+                            <span class="text-gray-600">Elementor</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-pink-500 mr-2"></div>
+                            <span class="text-gray-600">Tradução</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Minhas <span class="gradient-text">Habilidades</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Skill 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all">
+                    <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mb-4">
+                        <i class="fas fa-paint-brush text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Web Design</h3>
+                    <p class="text-gray-600 mb-4">Criação de layouts modernos e responsivos que se adaptam a qualquer dispositivo, garantindo uma experiência consistente para todos os usuários.</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-blue-500 h-2 rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+                
+                <!-- Skill 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all">
+                    <div class="w-14 h-14 rounded-full bg-purple-50 flex items-center justify-center mb-4">
+                        <i class="fas fa-mobile-alt text-purple-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">UI/UX Design</h3>
+                    <p class="text-gray-600 mb-4">Foco na usabilidade e experiência do usuário, criando interfaces intuitivas que facilitam a navegação e aumentam a satisfação do usuário.</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-purple-500 h-2 rounded-full" style="width: 75%"></div>
+                    </div>
+                </div>
+                
+                <!-- Skill 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all">
+                    <div class="w-14 h-14 rounded-full bg-indigo-50 flex items-center justify-center mb-4">
+                        <i class="fab fa-wordpress text-indigo-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Elementor</h3>
+                    <p class="text-gray-600 mb-4">Domínio avançado do Elementor para construção de páginas web personalizadas sem necessidade de codificação, mantendo alto padrão de qualidade.</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-indigo-500 h-2 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Meus <span class="gradient-text">Projetos</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300">
+                    <div class="h-48 bg-gradient-to-r from-blue-100 to-purple-100 flex items-center justify-center">
+                        <i class="fas fa-laptop-code text-5xl text-blue-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Website Corporativo</h3>
+                        <p class="text-gray-600 mb-4">Site institucional desenvolvido com Elementor para uma empresa local, com design responsivo e otimizado para SEO.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-3 py-1 bg-blue-100 text-blue-800 rounded-full">Elementor</span>
+                            <span class="text-xs px-3 py-1 bg-purple-100 text-purple-800 rounded-full">Responsivo</span>
+                            <span class="text-xs px-3 py-1 bg-green-100 text-green-800 rounded-full">SEO</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300">
+                    <div class="h-48 bg-gradient-to-r from-purple-100 to-pink-100 flex items-center justify-center">
+                        <i class="fas fa-shopping-cart text-5xl text-purple-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Loja Virtual</h3>
+                        <p class="text-gray-600 mb-4">E-commerce desenvolvido com WooCommerce e Elementor, com foco na experiência do usuário e taxas de conversão.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-3 py-1 bg-purple-100 text-purple-800 rounded-full">WooCommerce</span>
+                            <span class="text-xs px-3 py-1 bg-pink-100 text-pink-800 rounded-full">UI/UX</span>
+                            <span class="text-xs px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full">Elementor</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300">
+                    <div class="h-48 bg-gradient-to-r from-indigo-100 to-blue-100 flex items-center justify-center">
+                        <i class="fas fa-globe-americas text-5xl text-indigo-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Projeto de Tradução</h3>
+                        <p class="text-gray-600 mb-4">Site multilíngue com conteúdo traduzido e adaptado culturalmente para diferentes públicos-alvo.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full">Tradução</span>
+                            <span class="text-xs px-3 py-1 bg-blue-100 text-blue-800 rounded-full">Localização</span>
+                            <span class="text-xs px-3 py-1 bg-green-100 text-green-800 rounded-full">Elementor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Entre em <span class="gradient-text">Contato</span></h2>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-6">Vamos conversar!</h3>
+                    <p class="text-gray-600 mb-8">Estou sempre aberto a novas oportunidades e colaborações. Se você tem um projeto em mente ou quer discutir ideias, não hesite em me contatar.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-blue-500"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Email</p>
+                                <p class="font-medium">contato@kauavictor.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-purple-50 flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-purple-500"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Localização</p>
+                                <p class="font-medium">Brasil</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-indigo-50 flex items-center justify-center mr-4">
+                                <i class="fas fa-calendar-alt text-indigo-500"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Disponibilidade</p>
+                                <p class="font-medium">Segunda a Sexta, 9h-18h</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-blue-100 transition-colors">
+                            <i class="fab fa-linkedin-in text-blue-500"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-purple-100 transition-colors">
+                            <i class="fab fa-behance text-purple-500"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-pink-100 transition-colors">
+                            <i class="fab fa-dribbble text-pink-500"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-blue-100 transition-colors">
+                            <i class="fab fa-twitter text-blue-400"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <form action="https://formspree.io/f/mvgaderl" method="POST" target="invisible-frame" onsubmit="exibirMensagem()" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nome</label>
+                            <input type="text" name="name" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all" placeholder="Seu nome">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" name="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all" placeholder="seu@email.com">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Assunto</label>
+                            <input type="text" name="subject" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all" placeholder="Qual é o assunto?">
+                        </div>
+                        
+                        <div>
+                            <label for="message" name="message" class="block text-sm font-medium text-gray-700 mb-1">Mensagem</label>
+                            <textarea type="text" name="message" id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all" placeholder="Sua mensagem..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg font-medium hover:shadow-lg transition-all">Enviar Mensagem</button>
+                        <p id="mensagem-status" class="text-green-600 font-medium hidden">Mensagem enviada com sucesso!</p>
+
+                    </form>
+                </div>
+                <iframe name="invisible-frame" style="display:none;"></iframe>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-xl font-bold gradient-text">KV.</a>
+                    <p class="text-gray-400 mt-2">Criando experiências digitais memoráveis.</p>
+                </div>
+                
+                <div class="flex flex-col md:flex-row md:space-x-12 space-y-4 md:space-y-0">
+                    <div>
+                        <h4 class="font-semibold mb-3">Navegação</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Início</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">Sobre</a></li>
+                            <li><a href="#skills" class="text-gray-400 hover:text-white transition-colors">Habilidades</a></li>
+                            <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projetos</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contato</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold mb-3">Contato</h4>
+                        <ul class="space-y-2">
+                            <li class="text-gray-400">contato@kauavictor.com</li>
+                            <li class="text-gray-400">Brasil</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2023 Kauã Victor. Todos os direitos reservados.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Mobile menu toggle (placeholder - would need more JS for full functionality)
+        document.querySelector('button').addEventListener('click', function() {
+            alert('Menu mobile seria implementado aqui com JavaScript adicional');
+        });
+    </script>
+    <script>
+function exibirMensagem() {
+  setTimeout(() => {
+    const status = document.getElementById('mensagem-status');
+    status.classList.remove("hidden");
+  }, 500); // tempo para o form ser enviado
+}
+</script>
+
+</body>
+</html>
